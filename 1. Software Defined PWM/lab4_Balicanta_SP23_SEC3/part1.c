@@ -128,7 +128,7 @@ __interrupt void ISR_TB0_CCR0(void)
 #pragma vector= TIMER0_B1_VECTOR
 __interrupt void ISR_TB0_CCR1(void)
 {
-        P1OUT &= ~BIT0;      // green LED turns off when TB0CCR1 reaches its value over time
+        P1OUT &= ~BIT0;      // red LED turns off when TB0CCR1 reaches its value over time
         TB0CCTL1 &= ~CCIFG;
 }
 
